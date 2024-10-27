@@ -1,0 +1,10 @@
+theme_dir "/Users/cortman/.config/zellij/themes"
+theme "tokyo-night"
+default_layout "compact"
+on_force_close "quit"
+keybinds {
+  unbind "Ctrl h" // unbind in all modes I. I use this in vim navigation too much
+  shared_except "tmux" {
+    bind "Ctrl a" { SwitchToMode "Tmux"; }
+  }
+}
